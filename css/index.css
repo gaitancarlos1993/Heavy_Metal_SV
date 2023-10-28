@@ -1,6 +1,9 @@
 /* Estilo del encabezado (header) */
 .cls_nav_header_index {
-    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     border: 1px solid none;
     margin: 5px;
     background-color: #F5F5F5;
@@ -16,22 +19,20 @@
 
 /* Estilos para los elementos del menú */
 .item {
-    display: inline-block;
     margin: 10px;
-    border: 1px solid none;
     padding: 10px;
 }
 
 
 /* Estilo para el menú principal que se despliega primero en la línea */
 .cls_menu_header_index {
-    width: 5%;
+    width: auto;
     margin-right: 0;
 }
 
 /* Estilo para el logotipo del encabezado */
 .cls_logo_header_index {
-    width: 15%;
+    width: auto;
     overflow: hidden;
 }
 
@@ -53,18 +54,17 @@
 
 /* Estilo para la sección de búsqueda en el encabezado */
 .cls_search_header_index {
-    width: 60%;
+    width: auto;
 }
 
 /* Estilo para la sección de iniciar sesión en el encabezado */
 .cls_iniciar_sesion__header_index {
-    width: 14%;
+    width: auto;
     text-align: right;
     /* Alinea el contenido a la derecha */
     padding: 5px;
     /* Espacio interno */
     margin: 0;
-    /* Elimina el margen para asegurar la alineación a la derecha */
 }
 
 
