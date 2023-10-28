@@ -25,7 +25,7 @@
             </div>
             <div class="cls_logo_header_index item">
                 <img class="cls_img_mini" src="img/haz.png" alt="">
-                <a class="cls_title_logo" href="#">Heavy Metal</a>
+                <a class="cls_title_logo" href="index.php">Heavy Metal</a>
             </div>
             <div class="cls_search_header_index item">
                 <form action="" method="post" class="cls_form_busquedaGral_header">
@@ -131,7 +131,7 @@
         </div>
 
 
-        <form action="" method="post" class="cls_section1_cuerpo_index cls_cuerpo">
+        <form action="" method="post" class="cls_section1_cuerpo_index ">
             <h1>Busqueda de productos</h1>
             <label for="id_name_product_filtro_idx">Nombre del producto</label>
             <input type="text" id="id_name_product_filtro_idx" name="name_name_product_filtro_idx" placeholder="Nombre del producto">

@@ -15,22 +15,22 @@
 
 </head>
 
-<body>
+<body style="background-color: #FAFAFA;">
     <header>
         <nav class="cls_nav_header_index">
             <div class="cls_menu_header_index item">
-                <button type="button" class="cls_btn_menu_header_index cls_btn_forms">
+                <button type="button" class="cls_btn_menu_header_index cls_btn_forms" onclick="manageMenu()">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
             <div class="cls_logo_header_index item">
                 <img class="cls_img_mini" src="img/haz.png" alt="">
-                <a href="#">Heavy Metal</a>
+                <a href="index.php">Heavy Metal</a>
             </div>
             <div class="cls_search_header_index item">
                 <form action="" method="post" class="cls_form_busquedaGral_header">
                     <input class="cls_input_search_header" type="search" name="name_input_busquedaGral_header" placeholder="¿Qué producto desea buscar?">
-                    <button type="submit" class="cls_btn_forms">
+                    <button type="button" class="cls_btn_forms" onclick="manageFilter()">
                         <i class="fas fa-search"></i>
                     </button>
                 </form>
@@ -44,52 +44,191 @@
             </div>
         </nav>
     </header>
-    
-   
- 
-  <div class="Politicas">
-  <br>
-  <h3>Política de Cambios y Devoluciones </h3>
-  <br>
-  <h5>1. Satisfacción garantizada</h5>
-  En Heavy Metal, nos esforzamos por brindarte productos de alta calidad y servicios excepcionales. Si por alguna razón no estás satisfecho con tu compra, ofrecemos opciones de cambios y devoluciones para garantizar tu satisfacción.<br>
 
-  <br><h5>2. Condiciones generales</h5>
-   2.1. Plazo para cambios y devoluciones: Tienes un plazo de 30 días a partir de la fecha de entrega para solicitar un cambio o devolución.
 
-    <br>2.2. Estado del producto: El producto debe estar en su estado original, sin usar y en su empaque original. Debe incluir todas las piezas, accesorios y manuales que vinieron con él.
-    
-    <br>2.3. Exclusiones: Algunos productos, debido a su naturaleza o uso específico, pueden no ser elegibles para cambios o devoluciones. Estos incluyen productos personalizados, productos perecederos o productos sujetos a restricciones legales o de seguridad.
-     <br>
 
-    <br><h5>3. Procedimiento de cambios y devoluciones</h5>
-   3.1. Contacto previo: Antes de realizar cualquier cambio o devolución, te recomendamos que te pongas en contacto con nuestro servicio de atención al cliente. Ellos te brindarán las instrucciones necesarias y resolverán cualquier duda que puedas tener.
+    <div class="cls_cuerpo_index">
+        <div class="cls_div_categorias2 cls_cuerpo" id="id_div_categorias2">
+            <ul class="cls_ul_menu_categorias_index">
+                <li class="cls_li_menu_categorias_index">
+                    <button class="cls_btn_menu" id="id_btn_categorias_index[0]" type="button" onclick="mostrarSubCategorias(this)">
+                        <i class="fas fa-wrench"></i>
+                        Herramientas
+                    </button>
+                    <ul class="cls_ul_menu_categorias_index">
+                        <li class="cls_li_menu_categorias_index">
+                            <button class="cls_btn_menu" id="id_btn_subcategorias_index[0]" type="button" onclick="mostrarSubCategorias2(this)">
+                                <i class="fas fa-bolt"></i>
+                                Herramienta electrica
+                            </button>
+                            <ul class="cls_ul_menu_categorias_index">
+                                <li class="cls_li_menu_categorias_index">
+                                    <button class="cls_btn_menu" id="id_btn_subcategorias2_index[0]" type="button">
+                                        <i class="fas fa-drill"></i>
+                                        Taladro
+                                    </button>
 
-    <br>3.2. Documentación requerida: Para procesar tu solicitud de cambio o devolución, necesitaremos el comprobante de compra original, que puede ser el recibo de compra, la factura o el correo electrónico de confirmación del pedido.
-    
-    <br>3.3. Opciones disponibles:
-    
-    <br>3.3.1. Cambio por otro producto: Si deseas cambiar el producto por otro de igual o mayor valor, te ofreceremos opciones de productos disponibles y te informaremos sobre cualquier diferencia de precio.
-    
-    <br>3.3.2. Devolución y reembolso: Si prefieres realizar una devolución, te reembolsaremos el monto pagado utilizando el mismo método de pago utilizado en la compra original.
-     <br>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cls_li_menu_categorias_index">
+                            <button class="cls_btn_menu" id="id_btn_subcategorias_index[1]" type="button" onclick="mostrarSubCategorias2(this)">
+                                <i class="fas fa-industry"></i>
+                                Maquinaria
+                            </button>
 
-    <br><h5>4. Costos de envío</h5>
-   4.1. Cambios: Los costos de envío para el cambio de un producto correrán por cuenta del cliente, a menos que el cambio se deba a un error nuestro o a un producto defectuoso.
 
-    <br>4.2. Devoluciones: En caso de devolución, los costos de envío correrán por cuenta del cliente, a menos que la devolución se deba a un error nuestro o a un producto defectuoso.
-     <br>
+                        </li>
+                        <li class="cls_li_menu_categorias_index">
+                            <button class="cls_btn_menu" id="id_btn_subcategorias_index[2]" type="button" onclick="mostrarSubCategorias2(this)">
+                                <i class="fas fa-hard-hat"></i>
+                                Maquinaria para metal
+                            </button>
+                        </li>
+                        <li class="cls_li_menu_categorias_index">
 
-    <br><h5>5. Proceso de revisión</h5>
-   Una vez recibido el producto devuelto, realizaremos una revisión para asegurarnos de que cumple con las condiciones establecidas en esta política. Si todo está en orden, procederemos a realizar el cambio o reembolso correspondiente en un plazo de [30] días hábiles. <br>
+                            <button class="cls_btn_menu" id="id_btn_subcategorias_index[3]" type="button" onclick="mostrarSubCategorias2(this)">
+                                <i class="fas fa-hand-rock"></i>
+                                Herramienta manual
+                            </button>
 
-   <br><h5>6. Contacto</h5>
-   Para cualquier consulta o solicitud relacionada con cambios y devoluciones, puedes comunicarte con nuestro servicio de atención al cliente a través de los datos de contacto proporcionados en nuestra página web.
+                        </li>
+                        <li class="cls_li_menu_categorias_index">
 
-    <br><br>Recuerda que esta política de cambios y devoluciones está sujeta a cambios y actualizaciones. Te recomendamos revisarla periódicamente para estar al tanto de cualquier modificación.
-     <br>
-</div>
+                            <button class="cls_btn_menu" id="id_btn_subcategorias_index[4]" type="button" onclick="mostrarSubCategorias2(this)">
+                                <i class="fas fa-tools"></i>
+                                Equipos de taller
+                            </button>
+                        </li>
+                        <li class="cls_li_menu_categorias_index">
+                            <button class="cls_btn_menu" id="id_btn_subcategorias_index[5]" type="button" onclick="mostrarSubCategorias2(this)">
+                                <i class="fas fa-shield-alt"></i>
+                                Equipos de protección individual
+                            </button>
 
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="cls_li_menu_categorias_index">
+                    <button class="cls_btn_menu" id="id_btn_categorias_index[1]" type="button" onclick="mostrarSubCategorias(this)">
+                        <i class="fas fa-bolt"></i>
+                        Electricidad
+                    </button>
+                </li>
+                <li class="cls_li_menu_categorias_index">
+                    <button class="cls_btn_menu" id="id_btn_categorias_index[2]" type="button" onclick="mostrarSubCategorias(this)">
+                        <i class="fas fa-store"></i>
+                        Ferreteria
+                    </button>
+                </li>
+                <li class="cls_li_menu_categorias_index">
+                    <button class="cls_btn_menu" id="id_btn_categorias_index[2]" type="button" onclick="mostrarSubCategorias(this)">
+                        <i class="fas fa-paint-roller"></i>
+                        Pintura
+                    </button>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <form action="" method="post" class="cls_section1_cuerpo_index " id="id_section1_cuerpo_index">
+            <h1>Busqueda de productos</h1>
+            <label for="id_name_product_filtro_idx">Nombre del producto</label>
+            <input type="text" id="id_name_product_filtro_idx" name="name_name_product_filtro_idx" placeholder="Nombre del producto">
+            <label for="id_select_marcas_filtro">Marcas</label>
+            <select name="" id="id_select_marcas_filtro">
+                <option value="" selected>Seleccione la marca</option>
+                <option value="">Bosch</option>
+                <option value="">DeWalt</option>
+                <option value="">Makita</option>
+                <option value="">Milwaukee</option>
+            </select>
+            <label>Precio</label>
+            <div class="cls_div_precios_form">
+                <input type="number" placeholder=" Minimo" class="cls_inputs_precios_filtro cls_input1_precios_filtro">
+                <input type="number" placeholder=" Maximo" class="cls_inputs_precios_filtro cls_input2_precios_filtro">
+            </div>
+            <label>Categorias</label>
+            <div class="cls_div_categorias">
+
+                <ul>
+                    <li class="cls_li_categorias_filtro">
+                        <input type="checkbox" name="name_checkbox_categoria1_marcas" id="id_checkbox_categoria1_marcas">
+                        Electricidad
+                    </li>
+                    <li class="cls_li_categorias_filtro">
+                        <input type="checkbox" name="name_checkbox_categoria1_marcas" id="id_checkbox_categoria2_marcas">
+                        Herramientas
+                    </li>
+                    <li class="cls_li_categorias_filtro">
+                        <input type="checkbox" name="name_checkbox_categoria2_marcas" id="id_checkbox_categoria3_marcas">
+
+                        Ferreteria
+                    </li>
+
+
+                </ul>
+            </div>
+            <button class="cls_btn_forms" type="submit">Buscar</button>
+
+        </form>
+
+        <div class="cls_section2_cuerpo_index cls_cuerpo" id="id_section2_cuerpo_index">
+        <br>
+            <h3>Política de Cambios y Devoluciones </h3>
+            <br>
+            <h5>1. Satisfacción garantizada</h5>
+            En Heavy Metal, nos esforzamos por brindarte productos de alta calidad y servicios excepcionales. Si por alguna razón no estás satisfecho con tu compra, ofrecemos opciones de cambios y devoluciones para garantizar tu satisfacción.<br>
+
+            <br>
+            <h5>2. Condiciones generales</h5>
+            2.1. Plazo para cambios y devoluciones: Tienes un plazo de 30 días a partir de la fecha de entrega para solicitar un cambio o devolución.
+
+            <br>2.2. Estado del producto: El producto debe estar en su estado original, sin usar y en su empaque original. Debe incluir todas las piezas, accesorios y manuales que vinieron con él.
+
+            <br>2.3. Exclusiones: Algunos productos, debido a su naturaleza o uso específico, pueden no ser elegibles para cambios o devoluciones. Estos incluyen productos personalizados, productos perecederos o productos sujetos a restricciones legales o de seguridad.
+            <br>
+
+            <br>
+            <h5>3. Procedimiento de cambios y devoluciones</h5>
+            3.1. Contacto previo: Antes de realizar cualquier cambio o devolución, te recomendamos que te pongas en contacto con nuestro servicio de atención al cliente. Ellos te brindarán las instrucciones necesarias y resolverán cualquier duda que puedas tener.
+
+            <br>3.2. Documentación requerida: Para procesar tu solicitud de cambio o devolución, necesitaremos el comprobante de compra original, que puede ser el recibo de compra, la factura o el correo electrónico de confirmación del pedido.
+
+            <br>3.3. Opciones disponibles:
+
+            <br>3.3.1. Cambio por otro producto: Si deseas cambiar el producto por otro de igual o mayor valor, te ofreceremos opciones de productos disponibles y te informaremos sobre cualquier diferencia de precio.
+
+            <br>3.3.2. Devolución y reembolso: Si prefieres realizar una devolución, te reembolsaremos el monto pagado utilizando el mismo método de pago utilizado en la compra original.
+            <br>
+
+            <br>
+            <h5>4. Costos de envío</h5>
+            4.1. Cambios: Los costos de envío para el cambio de un producto correrán por cuenta del cliente, a menos que el cambio se deba a un error nuestro o a un producto defectuoso.
+
+            <br>4.2. Devoluciones: En caso de devolución, los costos de envío correrán por cuenta del cliente, a menos que la devolución se deba a un error nuestro o a un producto defectuoso.
+            <br>
+
+            <br>
+            <h5>5. Proceso de revisión</h5>
+            Una vez recibido el producto devuelto, realizaremos una revisión para asegurarnos de que cumple con las condiciones establecidas en esta política. Si todo está en orden, procederemos a realizar el cambio o reembolso correspondiente en un plazo de [30] días hábiles. <br>
+
+            <br>
+            <h5>6. Contacto</h5>
+            Para cualquier consulta o solicitud relacionada con cambios y devoluciones, puedes comunicarte con nuestro servicio de atención al cliente a través de los datos de contacto proporcionados en nuestra página web.
+
+            <br><br>Recuerda que esta política de cambios y devoluciones está sujeta a cambios y actualizaciones. Te recomendamos revisarla periódicamente para estar al tanto de cualquier modificación.
+            <br>    
+            Para cualquier consulta o solicitud relacionada con cambios y devoluciones, puedes comunicarte con nuestro servicio de atención al cliente a través de los datos de contacto proporcionados en nuestra página web.
+
+            <br><br>Recuerda que esta política de cambios y devoluciones está sujeta a cambios y actualizaciones. Te recomendamos revisarla periódicamente para estar al tanto de cualquier modificación.
+            <br>
+            
+        </div>
+    </div>
 
 
 

@@ -88,11 +88,12 @@
 }
 
 .cls_section1_cuerpo_index {
-    width: 25%;
+    
+
     margin: 5px;
     height: 600px;
     border: 1px solid none;
-    display: flex;
+    display: none;
     flex-direction: column;
     /* Alinea los elementos verticalmente */
     align-items: center;
@@ -101,7 +102,7 @@
     /* Agregar sombra */
     border-radius: 5px;
     background-color: #F2F2F2;
-    /* Agregar bordes redondeados */
+
 }
 
 .cls_ul_menu_categorias_index{
@@ -118,10 +119,10 @@
 }
 
 .cls_section2_cuerpo_index {
-    width: 72%;
+    width: 100%;
     margin: 5px;
     height: 600px;
-    border: 1px solid orange;
+    border: 1px solid none;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -160,12 +161,12 @@ label {
 }
 
 .cls_input1_precios_filtro {
-    width: 30%;
+    width: 48%;
     display: inline-block;
 }
 
 .cls_input2_precios_filtro {
-    width: 30%;
+    width: 48%;
     display: inline-block;
 }
 
@@ -343,7 +344,7 @@ a {
 
 #id_select_marcas_filtro,
 #id_name_product_filtro_idx {
-    width: 60%;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
@@ -497,3 +498,15 @@ a {
 
 }
 
+.body_cambios_devoluciones{
+    margin: 5px 50px;
+    text-align: justify;
+}
+#sec1_cambios_devoluciones{
+    width: 40%;
+    display: flex;
+    
+}
+.Politicas{
+    width: 55%;
+}
